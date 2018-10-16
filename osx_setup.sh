@@ -17,5 +17,5 @@ brew bundle install --verbose
 echo "Installing oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sed 's:env zsh::g' | sed 's:chsh -s .*$::g')"
 
-# call script to set up symbolic links
+echo "Setting up symbolic links for dotfiles"
 ./symlink_setup.sh

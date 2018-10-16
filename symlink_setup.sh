@@ -1,2 +1,13 @@
 #!/bin/bash
-echo "hello"
+
+# Thought about using a loop to handle all the symbolic links, but
+# that would require all my dotfiles to live in one directory. 
+# or hardcode some array that has the parent directory + dotfile name
+# and then loop through that array to create the symbolic links.
+# Which I can do, but for now I don't see the need and I'd rather
+# have the files in specific subdirectories.
+
+dotfiles_path="${HOME}/.osx_setup/dotfiles"
+
+ln -svf ${dotfiles_path}/git/.gitconfig $HOME
+ln -svf ${dotfiles_path}/zsh/.zshrc $HOME
