@@ -1,2 +1,2 @@
-alias formulae='cd /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula
-alias casks='cd /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask/Casks
+alias formulae='cd /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula'
+alias casks='cd /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask/Casks'
