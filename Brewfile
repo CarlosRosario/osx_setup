@@ -1,13 +1,15 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
 
 brew "git"
 
-cask "docker"
+cask "docker-edge"
 cask "dropbox"
 cask "google-chrome"
 cask "iterm2"
+cask "slack"
 cask "spectacle"
 cask "spotify"
 cask "sublime-text"
