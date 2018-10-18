@@ -11,3 +11,9 @@ dotfiles_path="${HOME}/.osx_setup/dotfiles"
 
 ln -svf ${dotfiles_path}/git/.gitconfig $HOME
 ln -svf ${dotfiles_path}/zsh/.zshrc $HOME
+
+# Set up symlinks for docker tab completion within zsh
+etc=/Applications/Docker.app/Contents/Resources/etc
+ln -svf $etc/docker.zsh-completion /usr/local/share/zsh/site-functions/_docker
+ln -svf $etc/docker-machine.zsh-completion /usr/local/share/zsh/site-functions/_docker-machine
+ln -svf $etc/docker-compose.zsh-completion /usr/local/share/zsh/site-functions/_docker-compose
