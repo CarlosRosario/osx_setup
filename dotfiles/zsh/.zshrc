@@ -96,3 +96,7 @@ dotfiles_path="${HOME}/.osx_setup/dotfiles"
 
 source ${dotfiles_path}/common/aliases
 source ${dotfiles_path}/homebrew/aliases
+source ${dotfiles_path}/docker/aliases
+
+# Source functions
+source ${dotfiles_path}/docker/functions

@@ -1,0 +1,7 @@
+docker_aliases() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
+
+docker_stop_containers() { docker stop $(docker ps -a -q); }
+
+docker_remove_containers() { docker rm $(docker ps -a -q); }
+
+docker_remove_images() { docker rmi $(docker images -q); }
