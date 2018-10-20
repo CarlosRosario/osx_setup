@@ -1,8 +1,14 @@
 alias d='docker'
 alias dcon='docker container'
 alias dls='docker container ls'
-alias dim='docker images'
 alias drm='docker container rm'
 alias dex='docker container exec -it'
 
+alias dim='docker images'
+
 alias dnet='docker network'
+
+alias dv='docker volume'
+alias dvls='docker volume ls'
+alias dvrm='docker volum rm'
+

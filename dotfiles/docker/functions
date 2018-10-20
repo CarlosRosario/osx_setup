@@ -5,3 +5,15 @@ docker_stop_containers() { docker stop $(docker ps -a -q); }
 docker_remove_containers() { docker rm $(docker ps -a -q); }
 
 docker_remove_images() { docker rmi $(docker images -q); }
+
+docker_remove_volumes() { 
+    echo -n "Do you really want to delete all docker volumes?"
+    read REPLY
+    if [[ $REPLY =~ ^[Yy]$ ]]
+    then
+      echo ' => Ok I will now delete all docker volumes'
+      docker volume rm $(docker volume ls -q); # Will throw a benign error when there are no docker volumes to delete. Need to fix eventually
+    else
+      echo ' => Ok I will not delete any docker volumes'
+    fi
+}
