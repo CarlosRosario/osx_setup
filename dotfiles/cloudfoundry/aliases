@@ -1,0 +1,3 @@
+alias cfp='cf push'
+alias cfcs='cf create-service'
+alias cfbs='cf bind-service'

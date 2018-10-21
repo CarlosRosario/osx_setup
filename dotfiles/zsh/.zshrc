@@ -92,8 +92,10 @@ source $ZSH/oh-my-zsh.sh
 DOTFILES_PATH="${HOME}/.osx_setup/dotfiles"
 # Source aliases
 source ${DOTFILES_PATH}/common/aliases
+source ${DOTFILES_PATH}/cloudfoundry/aliases
 source ${DOTFILES_PATH}/homebrew/aliases
 source ${DOTFILES_PATH}/docker/aliases
+
 
 # Source functions
 source ${DOTFILES_PATH}/docker/functions
