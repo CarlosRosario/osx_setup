@@ -7,10 +7,8 @@
 # Which I can do, but for now I don't see the need and I'd rather
 # have the files in specific subdirectories.
 
-dotfiles_path="${HOME}/.osx_setup/dotfiles"
-
-ln -svf ${dotfiles_path}/git/.gitconfig $HOME
-ln -svf ${dotfiles_path}/zsh/.zshrc $HOME
+ln -svf $DOTFILES_PATH/git/.gitconfig $HOME
+ln -svf $DOTFILES_PATH/zsh/.zshrc $HOME
 
 # Set up symlinks for docker tab completion within zsh
 etc=/Applications/Docker.app/Contents/Resources/etc

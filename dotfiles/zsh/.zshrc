@@ -89,14 +89,14 @@ source $ZSH/oh-my-zsh.sh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 
-dotfiles_path="${HOME}/.osx_setup/dotfiles"
+DOTFILES_PATH="${HOME}/.osx_setup/dotfiles"
 # Source aliases
-source ${dotfiles_path}/common/aliases
-source ${dotfiles_path}/homebrew/aliases
-source ${dotfiles_path}/docker/aliases
+source ${DOTFILES_PATH}/common/aliases
+source ${DOTFILES_PATH}/homebrew/aliases
+source ${DOTFILES_PATH}/docker/aliases
 
 # Source functions
-source ${dotfiles_path}/docker/functions
+source ${DOTFILES_PATH}/docker/functions
 
 # Source exports
-source ${dotfiles_path}/sdkman/exports
+source ${DOTFILES_PATH}/sdkman/exports
