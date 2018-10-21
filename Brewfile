@@ -1,9 +1,11 @@
+tap "cloudfoundry/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 
 brew "git"
+brew "cloudfoundry/tap/cf-cli"
 
 cask "docker-edge"
 cask "dropbox"

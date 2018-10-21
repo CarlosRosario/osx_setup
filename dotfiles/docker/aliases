@@ -12,3 +12,7 @@ alias dv='docker volume'
 alias dvls='docker volume ls'
 alias dvrm='docker volum rm'
 
+alias dcup='docker-compose up'
+alias dcdown='docker-compose down'
+alias dcps='docker-compose ps'
+
