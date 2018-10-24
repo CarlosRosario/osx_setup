@@ -12,6 +12,7 @@ export DOTFILES_PATH="${HOME}/.osx_setup/dotfiles"
 echo "Installing Homebrew.."
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# https://superuser.com/questions/1066743/how-to-get-bash-style-autocompletion-in-zsh-for-git-command
 echo "Installing git autocompletions.."
 git_version=$(git --version | cut -d' ' -f3)
 curl https://raw.githubusercontent.com/zsh-users/zsh/master/Completion/Unix/Command/_git \

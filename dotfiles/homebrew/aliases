@@ -1,2 +1,4 @@
 alias formulae='cd /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula'
 alias casks='cd /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask/Casks'
+alias cellar='cd /usr/local/Cellar'
+alias caskroom='cd /usr/local/Caskroom'
