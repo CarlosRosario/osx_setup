@@ -12,6 +12,11 @@ export DOTFILES_PATH="${HOME}/.osx_setup/dotfiles"
 echo "Installing Homebrew.."
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+echo "Installing git autocompletions.."
+git_version=$(git --version | cut -d' ' -f3)
+curl https://raw.githubusercontent.com/zsh-users/zsh/master/Completion/Unix/Command/_git \
+     > "/usr/local/Cellar/git/${git_version}/share/zsh/site-functions/_git"
+
 echo "Installing applications via Brewfile.."
 brew bundle install --verbose
 
@@ -27,6 +32,13 @@ $DOTFILES_PATH/sdkman/sdk_install.sh
 
 echo "Installing Java, Maven, Springboot"
 $DOTFILES_PATH/sdkman/install.sh
+
+echo "Installing nodejs"
+mkdir $HOME/.nvm
+nvm install node --lts
+
+echo "Installing Angular CLI"
+npm install -g @angular/cli@latest
 
 echo "Setting up symbolic links for dotfiles"
 ./symlink_setup.sh

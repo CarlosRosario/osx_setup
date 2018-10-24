@@ -63,7 +63,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+  #git
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -90,15 +90,18 @@ source $ZSH/oh-my-zsh.sh
 
 
 DOTFILES_PATH="${HOME}/.osx_setup/dotfiles"
+
 # Source aliases
 source ${DOTFILES_PATH}/common/aliases
 source ${DOTFILES_PATH}/cloudfoundry/aliases
 source ${DOTFILES_PATH}/homebrew/aliases
 source ${DOTFILES_PATH}/docker/aliases
 
-
 # Source functions
 source ${DOTFILES_PATH}/docker/functions
 
 # Source exports
 source ${DOTFILES_PATH}/sdkman/exports
+source ${DOTFILES_PATH}/nvm/exports
+
+

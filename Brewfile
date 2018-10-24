@@ -5,6 +5,7 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 
 brew "git"
+brew "nvm"
 brew "cloudfoundry/tap/cf-cli"
 
 cask "docker-edge"
