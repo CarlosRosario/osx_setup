@@ -1,3 +1,8 @@
 [user]
 	name = Carlos Rosario
 	email = carlos.rosario1990@gmail.com
+[alias]
+	plog1 = log --abbrev-commit --pretty=format:\"%C(bold green)(%ad) %C(white)- %C(yellow)%h %C(white)- %C(white)%s %C(white)- %C(blue)<%an> \" --date=format:'%Y-%m-%d %I%p:%M:%S'
+	plog2 = log --abbrev-commit --pretty=format:\"%C(bold green)(%ad) %C(white)- %C(yellow)%h %C(white)- %C(white)%s %C(white)- %C(blue)<%an> \" --date=format:'%Y-%m-%d %I%p:%M:%S' --name-status
+	undo  = reset --soft HEAD~1
+	research  = show --name-status

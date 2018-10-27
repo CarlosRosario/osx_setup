@@ -1,0 +1,1 @@
+git_aliases() { git config --global --list | grep alias | cut -c 7- | sed "s/^\([^=]*\)=\(.*\)/\1 => "git\ "\2/"| sed "s/['|\']//g" | sort; }

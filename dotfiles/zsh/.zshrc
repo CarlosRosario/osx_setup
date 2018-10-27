@@ -99,6 +99,7 @@ source ${DOTFILES_PATH}/docker/aliases
 
 # Source functions
 source ${DOTFILES_PATH}/docker/functions
+source ${DOTFILES_PATH}/git/functions
 
 # Source exports
 source ${DOTFILES_PATH}/sdkman/exports
