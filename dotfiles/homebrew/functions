@@ -1,0 +1,1 @@
+brew_aliases() { alias | grep 'brew' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }

@@ -100,6 +100,7 @@ source ${DOTFILES_PATH}/docker/aliases
 # Source functions
 source ${DOTFILES_PATH}/docker/functions
 source ${DOTFILES_PATH}/git/functions
+source ${DOTFILES_PATH}/homebrew/functions
 
 # Source exports
 source ${DOTFILES_PATH}/sdkman/exports
