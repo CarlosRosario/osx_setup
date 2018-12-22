@@ -105,5 +105,6 @@ source ${DOTFILES_PATH}/homebrew/functions
 # Source exports
 source ${DOTFILES_PATH}/sdkman/exports
 source ${DOTFILES_PATH}/nvm/exports
+source ${DOTFILES_PATH}/go/exports
 
 
