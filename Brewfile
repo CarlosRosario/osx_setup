@@ -7,6 +7,7 @@ tap "homebrew/core"
 brew "git"
 brew "go"
 brew "nvm"
+brew "redis"
 brew "cloudfoundry/tap/cf-cli"
 
 cask "docker-edge"
