@@ -4,6 +4,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 
+brew "awscli"
 brew "git"
 brew "go"
 brew "nvm"
