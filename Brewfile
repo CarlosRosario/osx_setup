@@ -10,6 +10,8 @@ brew "go"
 brew "nvm"
 brew "redis"
 brew "cloudfoundry/tap/cf-cli"
+brew "clang-format"
+brew "protobuf"
 
 cask "docker-edge"
 cask "dropbox"
