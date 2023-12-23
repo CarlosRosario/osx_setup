@@ -1,2 +1,4 @@
 alias ll='ls -Al'
 alias home='cd ~'
+alias encrypt='python3 ~/code/Python/encrypt-decrypt/encrypt.py'
+alias decrypt='python3 ~/code/Python/encrypt-decrypt/decrypt.py'
